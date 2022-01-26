@@ -562,10 +562,16 @@ const initializeClient = () => {
                     }
                 };
         
+                for (let i = 0; i < clientObj.channels.length; i++) {
+                    setTimeout(() => {
+                        client.join(clientObj.channels[i]).catch(console.error)
+                    }, i * CLIENT_CONNECT_TIMEOUT);
+                }
+
                 clientObj.channels.forEach(channel => {
                     setTimeout(() => {
                         client.join(channel).catch(console.error);
-                    }, CHANNEL_CONNECT_INTERVAL)
+                    }, clientObj.channels.indexOf(channel) * CHANNEL_CONNECT_INTERVAL)
                 });
 
                 clientObj.status = "initialized";
