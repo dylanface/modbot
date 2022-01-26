@@ -649,7 +649,9 @@ con.query("select distinct lower(twitch__user.display_name) as name from identit
     if (err) {console.error(err);return;}
 
     res.forEach(streamer => {
-        listenOnChannel(streamer.name);
+        setTimeout(() => {
+            listenOnChannel(streamer.name);
+        }, res.indexOf(streamer) * CHANNEL_CONNECT_INTERVAL)
     });
 
     setTimeout(() => {
