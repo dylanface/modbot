@@ -1,11 +1,18 @@
-const con = require("../../database");
+const DiscordUser = require("../../api/discord/DiscordUser");
 
 const listener = {
     name: 'logUserJoin',
     eventName: 'guildMemberAdd',
     eventType: 'on',
     listener (member) {
-        // con.query("insert into discord__user (id, name, discriminator, avatar) values (?, ?, ?, ?) on duplicate key update name = ?, discriminator = ?, avatar = ?;");
+        let discordUser = new DiscordUser(
+            member.id,
+            null,
+            member.user.username,
+            member.user.discriminator,
+            member.users.avatar
+        );
+        discordUser.post().catch(console.error);
     }
 };
 

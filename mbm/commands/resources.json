@@ -1,0 +1,72 @@
+[
+    {
+        "name":"Mental Health and Substance Abuse",
+        "links":[
+            {
+                "name":"National Suicide Prevention Lifeline",
+                "url":"https://suicidepreventionlifeline.org/",
+                "hotline":"1 (800) 273-8255"
+            },
+            {
+                "name":"National Alliance on Mental Illness",
+                "url":"https://www.nami.org/Find-Support/NAMI-HelpLine",
+                "hotline":"1 (800) 950-6264"
+            },
+            {
+                "name":"Substance Abuse and Mental Health Services Administration",
+                "url":"https://www.samhsa.gov/",
+                "hotline":"1 (800) 662-4357"
+            }
+        ]
+    },
+    {
+        "name":"Domestic Violence and Intimate Partner Violence",
+        "links":[
+            {
+                "name":"National Domestic Violence Hotline",
+                "url":"https://www.thehotline.org/",
+                "hotline":"1 (800) 799-7233"
+            },
+            {
+                "name":"Love is Respect - Teen Dating Abuse",
+                "url":"https://www.loveisrespect.org/",
+                "hotline":"1 (866) 331-9474"
+            },
+            {
+                "name":"Gay, Lesbian, Bisexual and Transgender National Hotline",
+                "url":"http://www.glbtnationalhelpcenter.org/",
+                "hotline":"1 (888) 843-4564"
+            }
+        ]
+    },
+    {
+        "name":"Sexual Assault",
+        "links":[
+            {
+                "name":"Rape, Abuse, and Incest National Network",
+                "url":"https://www.rainn.org/",
+                "hotline":"1 (800) 656-4673"
+            },
+            {
+                "name":"DOD Safe Helpline for Sexual Assault",
+                "url":"https://safehelpline.org/",
+                "hotline":"(877) 995-5247"
+            }
+        ]
+    },
+    {
+        "name":"Children, Youth, and Teenagers",
+        "links":[
+            {
+                "name":"National Runaway Safeline",
+                "url":"https://www.1800runaway.org/",
+                "hotline":"1 (800) 786-2929"
+            },
+            {
+                "name":"ChildHelp National Child Abuse Hotline",
+                "url":"https://www.childhelp.org/",
+                "hotline":"1 (800) 422-4453"
+            }
+        ]
+    }
+]
