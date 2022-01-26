@@ -1,5 +1,6 @@
 const CLIENT_CONNECT_TIMEOUT = 5000;
 const CLIENT_MAXIMUM_CHANNELS = 15;
+const CHANNEL_CONNECT_INTERVAL = 500;
 
 const ACTIVE_CHANNEL_PADDING = 3;
 
@@ -562,7 +563,9 @@ const initializeClient = () => {
                 };
         
                 clientObj.channels.forEach(channel => {
-                    client.join(channel).catch(console.error);
+                    setTimeout(() => {
+                        client.join(channel).catch(console.error);
+                    }, CHANNEL_CONNECT_INTERVAL)
                 });
 
                 clientObj.status = "initialized";
