@@ -561,12 +561,6 @@ const initializeClient = () => {
                         client.join(name);
                     }
                 };
-        
-                for (let i = 0; i < clientObj.channels.length; i++) {
-                    setTimeout(() => {
-                        client.join(clientObj.channels[i]).catch(console.error)
-                    }, i * CLIENT_CONNECT_TIMEOUT);
-                }
 
                 clientObj.channels.forEach(channel => {
                     setTimeout(() => {
